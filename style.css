@@ -73,8 +73,8 @@ td img { width: 60vw; max-width: 400px; }
 	width: 10vw;
 	height: 20vw;
 	margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    top: 0; left: -60vw; bottom: 0; right: 0;
 }
 
 .andrei {
@@ -82,5 +82,7 @@ td img { width: 60vw; max-width: 400px; }
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 

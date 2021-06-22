@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 @keyframes fade_anim {

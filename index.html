@@ -32,25 +32,25 @@
     	<table>
 			<tbody>
 			  <tr>
-			    <td><a href="manu.html"><img src="img/manu_6.jpg"></a></td>
+			    <td><a onclick="play(manu,'manu')" href="javascript:void(0);"><img id="manu" src="img/manu_6.jpg"></a></td>
 			  </tr>
 			  <tr>
-			    <td><a href="andreea.html"><img src="img/andreea_6.jpg"></a></td>
+			    <td><a onclick="play(andreea, 'andreea')" href="javascript:void(0);"><img id="andreea" src="img/andreea_6.jpg"></a></td>
 			  </tr>
 			  <tr>
-			    <td><a href="andrei.html"><img src="img/andrei_6.jpg"></a></td>
+			    <td><a onclick="play(andrei, 'andrei')" href="javascript:void(0);"><img id="andrei" src="img/andrei_6.jpg"></a></td>
 			  </tr>
 			  <tr>
-			    <td><a href="dora.html"><img src="img/dora_6.jpg"></a></td>
+			    <td><a onclick="play(dora, 'dora')" href="javascript:void(0);"><img id="dora" src="img/dora_6.jpg"></a></td>
 			  </tr>
 			  <tr>
-			    <td><a href="toma.html"><img src="img/toma_6.jpg"></a></td>
+			    <td><a onclick="play(toma, 'toma')" href="javascript:void(0);"><img id="toma" src="img/toma_6.jpg"></a></td>
 			  </tr>
 			  <tr>
-			    <td><a href="anca.html"><img src="img/anca_6.jpg"></a></td>
+			    <td><a onclick="play(anca, 'anca')" href="javascript:void(0);"><img id="anca" src="img/anca_6.jpg"></a></td>
 			  </tr>
 			  <tr>
-			    <td><p>Please turn your volume up.</p></td>
+			    <td><p>Tap on any of the above to listen.<br>Please turn your volume up.</p></td>
 			  </tr>
 			</tbody>
 			</table>
@@ -58,9 +58,36 @@
 	</div>
 
 
-	<!--<div class="note small p-2">
-	    <p><a href="./index.html">Back</a></p>
-	</div>-->
+	<script>
+		var manu = new Audio('snd/manu-converted.mp3');
+		var andreea = new Audio('snd/andreea-converted.mp3');
+		var andrei = new Audio('snd/andrei-converted.mp3');
+		var dora = new Audio('snd/dora-converted.mp3');
+		var toma = new Audio('snd/toma-converted.mp3');
+		var anca = new Audio('snd/anca-converted.mp3');
+
+		function stop() {
+ 			document.getElementById("anca").style.filter = "none";
+ 			document.getElementById("andreea").style.filter = "none";
+ 			document.getElementById("andrei").style.filter = "none";
+ 			document.getElementById("dora").style.filter = "none";
+ 			document.getElementById("manu").style.filter = "none";
+ 			document.getElementById("toma").style.filter = "none";
+
+ 			anca.pause();
+ 			andreea.pause();
+ 			andrei.pause();
+ 			dora.pause();
+ 			manu.pause();
+ 			toma.pause();
+		}
+		
+		function play(x,y) {
+			stop();
+			document.getElementById(y).style.filter = "invert(1)";
+			x.play();
+		}
+	</script>
 
 
 </body>

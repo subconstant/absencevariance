@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     font-family: 'IBM Plex Mono', monospace;
+    font-size: 8pt;
 }
 
 @keyframes fade_anim {
@@ -57,7 +58,7 @@ html, body {
 
 td { padding: 20px; }
 
-td img { width: 60vw; max-width: 400px; }
+td img { width: 60vw; max-width: 400px; transition: 0.5s; }
 
 .note {
     position: absolute;

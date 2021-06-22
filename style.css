@@ -55,9 +55,9 @@ html, body {
 	animation-delay: 10s;
 }
 
-td {
-	padding: 20px;
-}
+td { padding: 20px; }
+
+td img { width: 60vw; max-width: 400px; }
 
 .note {
     position: absolute;
@@ -67,3 +67,20 @@ td {
     max-width: 400px;
     border: 1px dotted #bbb;
 }
+
+.audio_controls {
+	position: absolute;
+	width: 10vw;
+	height: 20vw;
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.andrei {
+	background: url('img/andrei.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
